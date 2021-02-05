@@ -1,0 +1,142 @@
+body{
+    background-image: url("../img/bg.jpg");
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: left;
+    color: rgb(0, 73, 118);
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    margin: 0 0 15px 0;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    width: 980px;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 5px;
+}
+.medic{
+    width: 560px;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}
+.formulario {
+    padding: 40px 30px 0;
+}
+.form{
+    width: 300px;
+    padding: 0 0 15px;
+}
+label{
+    font-size: 14px;
+}
+.inputform,.datetime{
+    border-radius: 3px;
+    outline: none;
+    margin: 5px 0 5px;
+    width: 100%;
+    height: 15px;
+    border: solid 1px #868686;
+    padding: 10px;
+    display: block;
+    color: #B5B5B5;
+    font-family: 'Roboto', sans-serif;
+}
+.inputform:focus{
+    border-color:  #AACB88;
+ }
+.btn-enviar {
+    width: 100%;
+    background-color: #004976;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 323px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    -webkit-box-shadow: 5px 8px 19px -2px rgba(0,0,0,0.63);
+    -moz-box-shadow: 5px 8px 19px -2px rgba(0,0,0,0.63);
+    box-shadow: 5px 8px 19px -2px rgba(0,0,0,0.63);
+}
+.btn-enviar:hover {
+    background-color: #AACB88;
+    color: #fff;
+}
+select{
+    width: 323px;
+    border-radius: 3px;
+    outline: none;
+    margin: 10px 0 10px;
+    height: 38px;
+    border: solid 1px #868686;
+    padding: 0;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 5px;
+    color: #cacaca;
+}
+.alert {
+    padding: 0 0 20px 0;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    color: #004976;
+    width: 340px;
+    line-height: 25px;
+}
+@media (max-width: 991px) {
+    .contenedor{
+        width: 760px;
+    }
+    .medic{
+        width: 480px;
+    }
+  }
+@media (max-width: 767px) {
+    .contenedor {
+        width: 100%;
+        display: block;
+    }
+    .medic {
+        width: 200px;
+        position: initial;
+        margin: 0 auto;
+        display: block;
+    }
+    h1{
+        text-align: center;
+    }
+    .form{
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+    .btn-enviar{
+        width: 100%;
+    }
+    select {
+        width: 99%;
+    }
+    .formulario {
+        padding: 40px 15px 0;
+    }
+    .alert {
+        padding: 0;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: center;
+        width: 100%;
+    }
+    .inputform, .datetime{
+        width: 90%;
+    }
+}

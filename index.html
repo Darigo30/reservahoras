@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Reserva de Horas</title>
+</head>
+<body>
+    <div class="contenedor">
+       <div class="imagen">
+           <img class="medic" src="img/medic.png">
+       </div>
+       <div class="formulario">
+        <h1>Reservas de horas</h1>
+            <div class="form">
+                <div class="cont-inputs">
+                    <label>RUT</label>
+                    <input type="text" id="rut" name="rut" placeholder="Ejemplo: 13.022.635-5" class="inputform" required>
+                    <label>Nombres</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="inputform" required>
+                    <label>Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputform" required>
+                    <label>Edad</label>
+                    <input type="text" id="edad" name="edad" placeholder="Edad" class="inputform" required>
+                    <label>Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="Email" class="inputform" required>
+                    <label>Especialidad</label>
+                    <select id="especialidad" name="select">
+                        <option value="value1">Cardiología</option>
+                        <option value="value2">Pediatría</option>
+                        <option value="value3">Ginecología</option>
+                    </select>
+                    <label>Fecha</label>
+                    <input type="text" id="fecha" name="fecha" placeholder="Ejemplo: 15-02-2021" class="inputform datetime" required>
+                    <label>Hora</label>
+                    <select id="hora" name="select">
+                        <option value="value1">11:00</option>
+                        <option value="value2">11:30</option>
+                        <option value="value3">12:30</option>
+                    </select>
+                    <button id="btn-registro" value="Registrar" class="btn-enviar">Reservar</button>
+                </div>
+            </div>
+            <div id="alert" class="alert"></div>
+       </div>
+    </div>
+    <script src="js/custom.js"></script>
+</body>
+</html>
